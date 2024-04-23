@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".ResultActivity"
+    android:background="@drawable/bg">
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Game Over"-->
+<!--        android:textSize="48sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:layout_marginBottom="12dp"-->
+<!--        android:layout_marginTop="70dp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_centerHorizontal="true" />-->
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/gameover"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="Image Description"/>
+
+
+
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#5DDB62"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/highest_score_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highest Score: 0 "
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/result_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"/>
+
+
+    <Button
+        android:id="@+id/replay_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY AGAIN"
+        android:layout_below="@id/highest_score_text_view"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FF4444"
+        android:layout_marginTop="26dp"
+        android:textSize="28sp"/>
+
+</RelativeLayout>
